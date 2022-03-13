@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { LoginComponent } from './Components/user/login/login.component';
 import { LogoffComponent } from './Components/user/logoff/logoff.component';
-import { SidebarComponent } from './Components/main/sidebar/sidebar.component';
-import { MainComponent } from './Components/main/main.component';
-import { DashboardComponent } from './Components/main/dashboard/dashboard.component';
+import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { ProjectDetailsComponent } from './steps/project-details/project-details.component';
 import { RobotComponent } from './steps/robot/robot.component';
 import { GripperComponent } from './steps/gripper/gripper.component';
@@ -27,8 +24,6 @@ import { ExecuteBinComponent } from './steps/execute-bin/execute-bin.component';
     LoginComponent,
     LogoffComponent,
     SidebarComponent,
-    MainComponent,
-    DashboardComponent,
     ProjectDetailsComponent,
     RobotComponent,
     GripperComponent,

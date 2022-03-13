@@ -1,0 +1,8 @@
+<nav class="p-3">
+    <p class="text-xs mb-5">Steps Bin Picking</p>
+    <ul>
+        <li class="listitem w-full mb-3" *ngFor="let item of steps">
+            <a href="/{{item.value}}">{{item.title}}</a>
+        </li>
+    </ul>
+</nav>

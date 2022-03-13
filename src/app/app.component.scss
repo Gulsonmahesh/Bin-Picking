@@ -1,8 +1,27 @@
 :host {
     &::ng-deep {
+        .container {
+            height: 100vh;
+            grid-template-areas: 
+            "header header header"
+            "sidebar main main"
+        }
+        header {
+            grid-area: header;
+        }
         main {
-            height: 88vh;
-            border: 0;
+            grid-area: main
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-image: linear-gradient(#02317d,#3667b5);
+            color: #fff;        
+            ul {
+                width: 100%; /* from above */
+                list-style: none;
+                margin: 0;
+                padding: 0; 
+            }
         }
     }
 }
