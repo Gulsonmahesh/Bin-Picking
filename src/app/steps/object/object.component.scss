@@ -1,0 +1,16 @@
+:host {
+    &::ng-deep {
+        .buttoncard {
+            @apply w-[200px] h-[200px] 
+            border-2 border-dotted border-gray-400 rounded-[10px]
+            hover:border-blue-500 hover:bg-gray-200
+            hover:shadow hover:shadow-inherit
+        }
+        .cards {
+            @apply grid grid-cols-4 gap-[1rem];
+        }
+        .object {
+            @apply p-2 grid grid-rows-[100px_500px_100px];
+        }
+    }
+}

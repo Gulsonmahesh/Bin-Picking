@@ -8,4 +8,9 @@ body {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow: auto;
+}
+
+.heading {
+    @apply text-left text-base tracking-wide align-middle font-bold mb-5 mt-3;
 }
