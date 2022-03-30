@@ -1,44 +1,44 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './Components/header/header.component';
-import { LoginComponent } from './Components/user/login/login.component';
-import { LogoffComponent } from './Components/user/logoff/logoff.component';
-import { SidebarComponent } from './Components/sidebar/sidebar.component';
-import { ProjectDetailsComponent } from './steps/project-details/project-details.component';
-import { RobotComponent } from './steps/robot/robot.component';
-import { GripperComponent } from './steps/gripper/gripper.component';
-import { GripperTcpComponent } from './steps/gripper-tcp/gripper-tcp.component';
-import { ObjectComponent } from './steps/object/object.component';
-import { GrippingPointsComponent } from './steps/gripping-points/gripping-points.component';
-import { EnvironmentComponent } from './steps/environment/environment.component';
-import { CalibrationComponent } from './steps/calibration/calibration.component';
-import { DeployComponent } from './steps/deploy/deploy.component';
-import { ExecuteBinComponent } from './steps/execute-bin/execute-bin.component';
+import { HeaderComponent } from './component/header/header.component';
+import { SidebarComponent } from './component/sidebar/sidebar.component';
+// import { LayerComponent } from './component/layer/layer.component';
+import { ObjectsComponent } from './component/steps/objects/objects.component';
+import { GripperComponent } from './component/steps/gripper/gripper.component';
+import { CardComponent } from './component/common/card/card.component';
+import { MainfooterComponent } from './component/mainfooter/mainfooter.component';
+import { ButtonComponent } from './component/common/button/button.component';
+import { ModelComponent } from './component/common/model/model.component';
+import { ProjectdetailsComponent } from './component/steps/projectdetails/projectdetails.component'
 
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+
+const material=[MatFormFieldModule,MatInputModule,MatSelectModule,]
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent,
-    LogoffComponent,
     SidebarComponent,
-    ProjectDetailsComponent,
-    RobotComponent,
+    // LayerComponent,
+    ObjectsComponent,
     GripperComponent,
-    GripperTcpComponent,
-    ObjectComponent,
-    GrippingPointsComponent,
-    EnvironmentComponent,
-    CalibrationComponent,
-    DeployComponent,
-    ExecuteBinComponent
+    CardComponent,
+    MainfooterComponent,
+    ButtonComponent,
+    ModelComponent,
+    ProjectdetailsComponent
   ],
   imports: [
+    material,
     BrowserModule,
     AppRoutingModule
   ],
+  exports: [material],
   providers: [],
   bootstrap: [AppComponent]
 })

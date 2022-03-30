@@ -1,16 +1,50 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* You can add global styles to this file, and also import other style files */
 
 body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    overflow: auto;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.heading {
-    @apply text-left text-base tracking-wide align-middle font-bold mb-5 mt-3;
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,200;1,100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    //font-family: 'Poppins', sans-sarif;
+    font-family: 'Roboto', serif;
+}
+
+body {
+    margin: 20px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.wrappercontainer {
+    padding: 10px;
+    display: grid;
+    h3 {
+        // margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        height: 5vh;
+    }
+    .cards {
+        height: 72vh;
+        margin-top: 5px;
+        max-height: 100%;
+        overflow: auto;
+    }
+}
+
+.cards .mat-form-field-appearance-fill .mat-form-field-flex {
+    border-radius: 4px 4px 0 0;
+    padding: 0em !important;
 }

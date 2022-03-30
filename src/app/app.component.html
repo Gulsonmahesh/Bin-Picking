@@ -1,11 +1,15 @@
-<div class="container mx-auto grid grid-rows-[0.1fr] grid-cols-[220px_1fr] whitespace-normal gap-[0.5]">
-  <header class="mb-0 shadow-[0px_3px_0px_0px_rgba(0,0,0,0.1)]">
-    <app-header></app-header>
-  </header>
-  <div class="sidebar">
-    <app-sidebar></app-sidebar>
-  </div>
-  <main class="border border-t-0 bg-gray-100">
-    <router-outlet></router-outlet>
-  </main>
+<div class="grid-container">
+    <div class="grid-header">
+        <app-header></app-header>
+    </div>
+    <div class="grid-main">
+        <div class="inner-wrapper">
+            <div class="sidebar">
+                <app-sidebar></app-sidebar>
+            </div>
+            <div class="maincontent">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
 </div>
